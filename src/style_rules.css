@@ -1,69 +1,75 @@
-*{
+* {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color:white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    outline: 1px dashed black;
 }
 
-.background{
-    background-color: #0c0c0f;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.container{
-    position: absolute;
-    width: 100%;
-    height: auto;
-    left: 0;
-    top: 0;
-}
-
-.header{
-    background-color: #023333; /*red: #420505 */
-    position: relative;
+.nav_bar {
+    background-color: darkred;
+    height: 60px;
     display: flex;
-    left: 0;
-    top: 0;
-    width: 100%;
+}
+
+.panel {
+    display: flex;
+    flex: 1;
+    padding: 1.67em;
+    gap: 0.5em;
+    flex-wrap: wrap;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+.panel p {
+    max-width: 50em;
+}
+
+.panel.horizontal {
+    flex-direction: row;
+}
+
+.panel.vertical {
+    flex-direction: column;
+}
+
+.panel.vertical.centre {
+    align-items: center;
+}
+
+.panel.horizontal.centre {
+    justify-content: center;
+}
+
+.panel.horizontal.even {
+    justify-content: space-evenly;
+}
+
+.box { /*place holder*/
+    width: 50px;
     height: 50px;
 }
 
-.header.left{
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-shrink: 1;
-    flex-grow: 1;
-    width: auto;
-    margin-left: 5px;
-    gap: 8px;
-
-}
-
-.header.right{
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: auto;
-    gap: 8px;
-    flex-shrink: 1;
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
-.header img{
-    display: inline-block;
+.slide {
+    width: 100%;
     height: 100%;
-    width: auto;
-    object-fit: contain;
-    align-self: center;
+    position: relative;
+    background-color: black;
 }
 
-.header a {
-    height: 80%;
-    width: auto;
+.slide_show {
+    width: 100%;
+    height: 600px;
+}
+
+.footer {
+    position: fixed;
+    width: 3em;
+    height: 3em;
+    bottom: 60px;
+    right: 30px;
+    border: 0;
+    border-radius: 100%;
+    background-color: rgb(58, 53, 101);
 }
