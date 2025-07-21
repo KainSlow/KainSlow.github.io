@@ -1,0 +1,23 @@
+{
+    "about":{
+        "h2": "Sobre mi",
+        "p": "Hola! me apasionan los videojuegos y la programación.\nDesde pequeño tengo recuerdos jugando clásicos de la SNES como Super Mario All Stars y Donkey Kong Country. Mi juego favorito es TLOZ Majora's Mask.\nMi interés por la creación de juegos surgió cuando era pequeño, en el colegio me gustaba crear laberintos para que mis compañeros de curso los resolvieran. Ya un poco más grande, gracias a mi hermano mayor, descubrí Little Big Planet, un maravilloso juego donde además de poder jugar niveles únicos e increíbles, podías crear los tuyos, pasé horas y horas en la creación de niveles y ahí fue donde cree mi primer nivel, el cual fue aclamado por los demás jugadores con un total de 2 likes!.\nTambién recuerdo crear un par de carreras para el GTA V Online, donde conseguí buena aceptación también.\nMi interés por la programación surgió ya más grande, con alrededor de 15 años, decidí intentar utilizar el popular motor de videojuegos \"Unity\""
+    },
+    "gamedev":{
+        "h2": "Game dev",
+        "p": "Mi experiencia programando"
+
+    },
+    "webdev":{
+        "h2": "Web dev"
+
+    },
+    "gamedevImgs": [
+        "/assets/img/showcase/Fractal.png",
+        "/assets/img/showcase/Soulslike.png",
+        "/assets/img/showcase/Pgen.png",
+        "/assets/img/showcase/Wfc.png",
+        "/assets/img/showcase/Voids.png"
+        ],
+    "webdevImgs": [""]
+}

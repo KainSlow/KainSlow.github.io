@@ -1,26 +1,39 @@
 :root {
-  --sun: rgb(255, 209, 122);
-  --light-sun: rgb(255, 238, 206);
+  --sun: rgb(250, 215, 151);
+  --light-sun: rgb(255, 241, 215);
   --cyan: rgb(0, 176, 186);
   --deep-blue: rgb(0, 0, 60);
+  --obsidian: rgb(14, 12, 18);
+  --bright-red: rgb(190, 0, 0);
+  --deep-green: rgb(0, 43, 34);
+}
+
+@font-face {
+  font-family: "RetroGaming";
+  src: url("/assets/fonts/Retro Gaming.ttf");
 }
 
 * {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "RetroGaming";
   margin: 0;
   padding: 0;
-  outline: 1px dashed var(--sun);
-  color: var(--sun);
+  color: white;
 }
 
 html {
   height: 100%;
 }
 
+h1 {
+  margin: 0;
+}
+
 body {
   height: 100%;
   width: 100%;
-  background: linear-gradient(var(--cyan), 35%, var(--deep-blue));
+  background: black;
+  overflow-x: hidden;
+  padding-top: 64px;
 }
 
 ul {
@@ -28,13 +41,15 @@ ul {
 }
 
 button {
+  filter: opacity(0.8);
   background: transparent;
   border: 0;
+  transition: color 0.5s ease-out;
 }
 
-.social-link:hover,
+.social-link img:hover,
 button:hover {
-  filter: brightness(150%);
+  filter: brightness(150%) opacity(100%);
 }
 
 img {
@@ -141,11 +156,60 @@ img {
 }
 
 .social-link img {
-  filter: invert(31%) sepia(99%) saturate(1.9);
+  transition: color 0.5s ease-out;
+  filter: opacity(0.8);
+  /*
+  filter: invert(28%) sepia(95%) saturate(1.4);
+  */
 }
 
 .panel {
   width: 512px;
   border-radius: 12px;
+  /*
   background: linear-gradient(rgba(0, 0, 60, 0), rgba(0, 0, 60, 0.5));
+  */
+}
+
+.slider-wrapper {
+  position: relative;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.slider {
+  width: 512px;
+  display: flex;
+  aspect-ratio: 16/9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+.slider-nav {
+  position: absolute;
+  display: flex;
+  column-gap: 1rem;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: white;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+  opacity: 1;
 }
