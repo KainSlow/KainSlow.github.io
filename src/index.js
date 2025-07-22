@@ -101,11 +101,12 @@ function createSlider(panelElem, urls){
     wrapper.className = "slider-wrapper";
     const slider = Object.assign(document.createElement("div"), {className: "slider"} );
     const sliderNav = Object.assign(document.createElement("div"), {className: "slider-nav"});
-    let newImg;
-    let newA;
     urls.forEach((value, i)=>{
-        newImg = Object.assign(document.createElement("img"), {src: value, id: "slide-" + i});
-        newA = Object.assign(document.createElement("a"), {href: "#slide-" + i});
+        let newImg = Object.assign(document.createElement("img"), {src: value, id: "slide-" + i});
+        let newA = Object.assign(document.createElement("a"), {href: "javascript:void(0);"});
+        newA.addEventListener("click", ()=>{
+            slider.scroll(i * 512, 0);
+        })
         slider.appendChild(newImg);
         sliderNav.appendChild(newA);
     });
