@@ -8,13 +8,16 @@
   --deep-green: rgb(0, 43, 34);
 }
 
+/*
 @font-face {
   font-family: "RetroGaming";
   src: url("/assets/fonts/Retro Gaming.ttf");
 }
+*/
 
 * {
   font-family: "RetroGaming";
+  font-family: Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   color: white;
@@ -31,13 +34,13 @@ h1 {
 body {
   height: 100%;
   width: 100%;
-  background: black;
+  background: var(--obsidian);
   overflow-x: hidden;
   padding-top: 64px;
 }
 
-ul {
-  list-style-type: none;
+p {
+  filter: opacity(0.75);
 }
 
 button {
@@ -59,6 +62,7 @@ img {
 
 .flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .flex.col {
@@ -149,6 +153,10 @@ img {
   gap: 64px;
 }
 
+.flex.l-pad {
+  padding-left: 1rem;
+}
+
 .social-link {
   height: 32px;
   width: 32px;
@@ -169,6 +177,7 @@ img {
   /*
   background: linear-gradient(rgba(0, 0, 60, 0), rgba(0, 0, 60, 0.5));
   */
+  margin-bottom: 33%;
 }
 
 .slider-wrapper {
@@ -179,17 +188,20 @@ img {
 
 .slider {
   width: 512px;
+  max-height: 256px;
   display: flex;
   aspect-ratio: 16/9;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
 .slider img {
   flex: 1 0 100%;
   scroll-snap-align: start;
-  object-fit: cover;
+  object-fit: contain;
+  border-radius: 12px;
 }
 
 .slider-nav {

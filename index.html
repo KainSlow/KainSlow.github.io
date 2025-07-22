@@ -12,32 +12,49 @@
     <title>Document</title>
 </head>
 
-<body class="flex jcenter">
-    <div class="flex gap6">
-        <nav class="flex col gap5 pad astart">
-            <div>
-                <h1>Kainslow </h1>
+<body class="flex jcenter gap4">
+    <nav class="flex col gap5 pad astart">
+        <div>
+            <h1>Kainslow </h1>
+        </div>
+        <div class="flex col gap astart">
+            <button id="aboutme">
+                <h4>Sobre mi</h4>
+            </button>
+            <h4>Gamedev</h4>
+            <div class="flex col l-pad gap1 astart">
+                <button class="gamedev-btn">
+                    <h5>Procedural Gen</h5>
+                </button>
+                <button class="gamedev-btn">
+                    <h5>Pathfinding</h5>
+                </button>
+                <button class="gamedev-btn">
+                    <h5>Prototipos</h5>
+                </button>
             </div>
-            <div class="flex col gap astart">
-                <button>Sobre mi</button>
-                <button>Game dev</button>
-                <!--
-                    <button>Web dev</button>
-                -->
-            </div>
-            <div class="flex gap1">
-                <a class="social-link" href="https://www.linkedin.com/in/kainslow/" target="_blank">
-                    <img src="./assets/img/in-logo/InBug-White.png" alt="li">
-                </a>
-                <a class="social-link" href="https://github.com/KainSlow" target="_blank">
-                    <img src="./assets/img/github-mark/github-mark-white.png" alt="git">
-                </a>
-                <a class="social-link" href="https://www.instagram.com/kainslow/" target="_blank">
-                    <img src="./assets/img/Instagram-White-PNG-File-147073805.png" alt="i">
-                </a>
-            </div>
-        </nav>
-        <div class="panel flex col pad gap3">
+            <!--
+                <button>Web dev</button>
+            -->
+        </div>
+        <div class="flex gap1">
+            <a class="social-link" href="https://www.linkedin.com/in/kainslow/" target="_blank">
+                <img src="./assets/img/in-logo/InBug-White.png" alt="linkedin">
+            </a>
+            <a class="social-link" href="https://github.com/KainSlow" target="_blank">
+                <img src="./assets/img/github-mark/github-mark-white.png" alt="github">
+            </a>
+            <a class="social-link" href="https://kainslow.itch.io/" target="_blank">
+                <img src="./assets/img/itchio-textless-white.svg" alt="itch.io">
+            </a>
+            <a class="social-link" href="https://www.instagram.com/kainslow/" target="_blank">
+                <img src="./assets/img/Instagram-White-PNG-File-147073805.png" alt="instagram">
+            </a>
+        </div>
+    </nav>
+    <div class="flex col pad1 gap3">
+        <h2 id="title"></h2>
+        <div class="panel flex col gap3">
         </div>
     </div>
     <script src="./src/index.js"></script>

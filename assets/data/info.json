@@ -1,23 +1,40 @@
 {
     "about":{
-        "h2": "Sobre mi",
-        "p": "Hola! me apasionan los videojuegos y la programación.\nDesde pequeño tengo recuerdos jugando clásicos de la SNES como Super Mario All Stars y Donkey Kong Country. Mi juego favorito es TLOZ Majora's Mask.\nMi interés por la creación de juegos surgió cuando era pequeño, en el colegio me gustaba crear laberintos para que mis compañeros de curso los resolvieran. Ya un poco más grande, gracias a mi hermano mayor, descubrí Little Big Planet, un maravilloso juego donde además de poder jugar niveles únicos e increíbles, podías crear los tuyos, pasé horas y horas en la creación de niveles y ahí fue donde cree mi primer nivel, el cual fue aclamado por los demás jugadores con un total de 2 likes!.\nTambién recuerdo crear un par de carreras para el GTA V Online, donde conseguí buena aceptación también.\nMi interés por la programación surgió ya más grande, con alrededor de 15 años, decidí intentar utilizar el popular motor de videojuegos \"Unity\""
-    },
-    "gamedev":{
-        "h2": "Game dev",
-        "p": "Mi experiencia programando"
-
+        "p": "Hola! me apasionan los videojuegos y la programación.\nDesde pequeño tengo recuerdos jugando clásicos de la SNES como Super Mario All Stars y Donkey Kong Country. Mi juego favorito es TLOZ Majora's Mask.\nMi interés por la creación de juegos surgió cuando era pequeño, en el colegio me gustaba crear laberintos para que mis compañeros de curso los resolvieran. Ya un poco más grande, gracias a mi hermano mayor, descubrí Little Big Planet, un maravilloso juego donde además de poder jugar niveles únicos e increíbles, podías crear los tuyos, pasé horas y horas en la creación de niveles y ahí fue donde cree mi primer nivel, el cual fue aclamado por la comunidad de jugadores,  obteniendo un total de... ¡2 Likes!.\nTambién recuerdo crear un par de carreras para el GTA V Online, donde conseguí buena aceptación también.\nMi interés por la programación surgió ya más grande, con alrededor de 15 años, decidí intentar utilizar el popular motor de videojuegos \"Unity\", seguí una serie de tutoriales y después de mucho esfuerzo, conseguí crear un personaje que se movía y saltaba. Sin tener mucha idea de lo que estaba haciendo, decidí que era hora de moverse hacia el apartado gráfico, donde me dispuse a aprender pixelart."
     },
     "webdev":{
         "h2": "Web dev"
-
     },
-    "gamedevImgs": [
-        "/assets/img/showcase/Fractal.png",
-        "/assets/img/showcase/Soulslike.png",
+
+    "pcg":{
+        "p": "Mi interés en la generación procedural surgió a raíz de conocer el popular videojuego \"Minecraft\", siempre me intrigó el cómo creaban mundos interesantes e \"infinitos\" de manera automática.\nMi primer acercamiento a estos algoritmos fue siguiendo la serie del popular Youtuber Sebastian Lague, sobre generación procedural en Unity utilizando Marching Squares (3ra imágen).\nInvestingado más sobre el tema descubrí que habían más algoritmos, como el popular Wave Function Collapse, el cual implementé en Godot (2da imágen) de manera un tanto ingenua, ya que en ese tiempo apenas estaba aprendiedo a utilizar el motor de videojuegos.\nMi interés no se detuvo ahí y tiempo después me dispuse a aprender generación procedural utilizando el popular \"ruido\" mezclándolo con voxels, binary meshing  y programación multi hilos para más rendimiento (1ra imágen)"
+    },
+    "pathfinding":{
+        "p": "Aprendí sobre algoritmos de búsqueda de caminos al leer sobre ellos en el libro \"Game AI Pro\", el algoritmo que se ve en la imágen es A*, este algoritmo se enfoca en encontrar un camino entre dos puntos o nodos dentro de un mapa dividido espacialmente (por ej. un tablero 2D), para ello se implementa un sistema de heurística y pesos, el cual se utiliza para determinar cuál es la mejor ruta, una de las ventajas que posee este algoritmo es que puede ajustarse para priorizar velocidad o eficiencia en el proceso de búsqueda del camino.\nUtilicé este algoritmo para hacer una IA en un clon de Pac-Man, el objetivo era mantener con vida a Pac-Man y conseguir la mayor cantidad de puntos antes de morir. Esto fue cuando cursaba el módulo de inteligencia artificial en la universidad en la que estudiaba, la implementación fue comparada con la de mis compañeros y al parecer mi equipo ganó."
+    },
+    "protos":{
+        "p": "Durante mi aprendizaje he realizado muchos protptipos, aquí destaco los que considero más interesantes"
+    },
+    "webdevImgs": [""],
+    "pixelartImgs":[
+        "/assets/img/showcase/pixelart/Venus.png",
+        "/assets/img/showcase/pixelart/Venuss.png",
+        "/assets/img/showcase/pixelart/Majora_s Mask.png",
+        "/assets/img/showcase/pixelart/Rorschach.png",
+        "/assets/img/showcase/pixelart/Calavera.png"
+    ],
+    "pcgImgs":[
         "/assets/img/showcase/Pgen.png",
         "/assets/img/showcase/Wfc.png",
-        "/assets/img/showcase/Voids.png"
-        ],
-    "webdevImgs": [""]
+        "/assets/img/showcase/MarchingSquares.png"
+    ],
+    "pathImgs":[
+        "/assets/img/showcase/Pathfinding.png"
+    ],
+    "protoImgs":[
+        "/assets/img/showcase/Voids.png",
+        "/assets/img/showcase/Humberstone.png",
+        "/assets/img/showcase/Soulslike.png",
+        "/assets/img/showcase/Snake.png"
+    ]
 }
