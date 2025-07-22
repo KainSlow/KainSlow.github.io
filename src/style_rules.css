@@ -33,6 +33,7 @@ body {
 
 p {
   filter: opacity(0.75);
+  width: 100%;
 }
 
 button {
@@ -50,6 +51,10 @@ button:hover {
 img {
   height: 100%;
   object-fit: cover;
+}
+
+nav {
+  max-width: 256px;
 }
 
 .flex {
@@ -149,6 +154,14 @@ img {
   padding-left: 1rem;
 }
 
+.f1 {
+  flex: 1;
+}
+
+.f2 {
+  flex: 2;
+}
+
 .social-link {
   height: 32px;
   width: 32px;
@@ -158,18 +171,29 @@ img {
 .social-link img {
   transition: color 0.5s ease-out;
   filter: opacity(0.8);
-  /*
-  filter: invert(28%) sepia(95%) saturate(1.4);
-  */
 }
 
 .panel {
-  width: 512px;
-  border-radius: 12px;
-  /*
-  background: linear-gradient(rgba(0, 0, 60, 0), rgba(0, 0, 60, 0.5));
-  */
   margin-bottom: 33%;
+  max-width: 512px;
+}
+
+@media (width <= 600px) {
+  .panel {
+    max-width: 300px;
+  }
+  .slider {
+    max-width: 300px;
+  }
+}
+
+@media (width <= 300px) {
+  .panel {
+    max-width: 230px;
+  }
+  .slider {
+    max-width: 230px;
+  }
 }
 
 .slider-wrapper {

@@ -73,7 +73,7 @@ function addCustomProtoInfo(panel){
     t3.appendChild(document.createTextNode("2D Soulslike (3ra imágen)"));
     panel.appendChild(t3);
     let p3 = document.createElement("p");
-    p3.appendChild(document.createTextNode("Prototipo realizado para aprender a implementar mecánicas populares de videojuegos plataformeros, soulslike y metroidvania, inspirado en Blasphemous."));
+    p3.appendChild(document.createTextNode("Prototipo realizado para aprender a implementar mecánicas populares de videojuegos plataformeros, soulslike y metroidvania, inspirado en Blasphemous. (Pixelart sacado de assets gratuitos)"));
     panel.appendChild(p3);
 
     let t4 = document.createElement("h3");
