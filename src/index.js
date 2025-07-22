@@ -36,13 +36,7 @@ document.addEventListener("DOMContentLoaded", async()=>{
         addCustomProtoInfo(panel);
     });
     
-    //createAbout(panel, info);
-    title.innerHTML = "Prototipos";
-    panel.innerHTML = "";
-    createSlider(panel, info.protoImgs);
-    displayInfo(panel, info.protos);
-    addCustomProtoInfo(panel);
-
+    createAbout(panel, info);
 })
 
 
