@@ -21,6 +21,8 @@ document.addEventListener("DOMContentLoaded", async()=>{
         panel.innerHTML = "";
         createSlider(panel, info.pcgImgs);
         displayInfo(panel, info.pcg);
+        embedVideo(panel, info.videosURLs[0])
+        embedVideo(panel, info.videosURLs[1])
     });
     gamedev_btns[1].addEventListener("click",()=>{
         title.innerHTML = "Pathfinding";
@@ -33,7 +35,7 @@ document.addEventListener("DOMContentLoaded", async()=>{
         panel.innerHTML = "";
         createSlider(panel, info.protoImgs);
         displayInfo(panel, info.protos);
-        addCustomProtoInfo(panel);
+        addCustomProtoInfo(panel, info);
     });
     
     createAbout(panel, info);
@@ -48,7 +50,7 @@ function createAbout(panel, info){
     document.querySelector(".slider").style.aspectRatio = "4/3";
 }
 
-function addCustomProtoInfo(panel){
+function addCustomProtoInfo(panel, info){
     let t1 = document.createElement("h3");
     t1.appendChild(document.createTextNode("Deeper Down (1ra imágen)"));
     panel.appendChild(t1);
@@ -59,6 +61,8 @@ function addCustomProtoInfo(panel){
     panel.appendChild(p1);
     panel.appendChild(p1_2);
 
+    embedVideo(panel, info.videosURLs[2])
+
     let t2 = document.createElement("h3");
     t2.appendChild(document.createTextNode("Humberstone (2da imágen)"));
     panel.appendChild(t2);
@@ -68,6 +72,9 @@ function addCustomProtoInfo(panel){
     p2_2.appendChild(document.createTextNode("El prototipo más \"completo\" que he hecho, tiene sistema de progresión, interacción básica con NPCs, tienda, diferentes escenas, generación procedural simple y un loop completo del juego."));
     panel.appendChild(p2);
     panel.appendChild(p2_2);
+
+    embedVideo(panel, info.videosURLs[3])
+
 
     let t3 = document.createElement("h3");
     t3.appendChild(document.createTextNode("2D Soulslike (3ra imágen)"));
@@ -114,4 +121,9 @@ function createSlider(panelElem, urls){
     wrapper.appendChild(slider);
     wrapper.appendChild(sliderNav);
     panelElem.appendChild(wrapper);
+}
+
+function embedVideo(panelElem, url){
+    const iframe = Object.assign(document.createElement("iframe") , {src: url, height: "256"})
+    panelElem.appendChild(iframe);
 }
