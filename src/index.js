@@ -83,6 +83,8 @@ function addCustomProtoInfo(panel, info){
     p3.appendChild(document.createTextNode("Prototipo realizado para aprender a implementar mecánicas populares de videojuegos plataformeros, soulslike y metroidvania, inspirado en Blasphemous. (Pixelart sacado de assets gratuitos)"));
     panel.appendChild(p3);
 
+    embedVideo(panel, info.videosURLs[4]);
+
     let t4 = document.createElement("h3");
     t4.appendChild(document.createTextNode("Snake clon (4ta imágen)"));
     panel.appendChild(t4);
